@@ -1,0 +1,18 @@
+$primary-color: #2bedb7;
+$background-color: #FFFFFF;
+
+.button-login {
+  color: $primary-color;
+  padding: 7px 15px;
+  margin: 10px 0;
+  font-size: 1.1em;
+  cursor: pointer;
+  background: $background-color;
+  border: 2px solid $primary-color;
+  border-radius: 5px;
+
+  &:hover {
+    background: $primary-color;
+    color: #FFFFFF;
+  }
+}

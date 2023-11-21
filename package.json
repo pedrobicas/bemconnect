@@ -1,5 +1,5 @@
 {
-  "name": "gs-frotend",
+  "name": "teste",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,8 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "bootstrap": "^5.3.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-bootstrap": "^2.9.1",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.19.0",
+    "sass": "^1.69.5",
+    "styled-components": "^6.1.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.37",
