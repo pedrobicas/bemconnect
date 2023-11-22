@@ -1,18 +1,20 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  padding: 5vw;
-  background-color: #12d39d;
+  padding: 2vw;
+  background-color: #94b699;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
+  @media screen and (max-width: 700px) {
+    flex-wrap: wrap
+  }
 `;
 
 export const Image = styled.img`
-  margin: 2.5vw;
-  width: 30%;
+margin: 40px;
+width: 30%;
 `;
 
 export const Text = styled.h1`

@@ -20,7 +20,7 @@ function BasicExample() {
 					<Nav className="me-auto">
 						<Nav.Link href="/">Inicio</Nav.Link>
 						<Nav.Link href="sobre">Sobre</Nav.Link>
-						<Nav.Link href="recursos">Aplicativo</Nav.Link>
+						<Nav.Link href="aplicativo">Aplicativo</Nav.Link>
 					</Nav>
 					<Nav>
 						{/* // Se não tiver um usuario logado, deve apresentar um botão para logar

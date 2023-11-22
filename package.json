@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "backend": "json-server --watch db/db.json"
   },
   "dependencies": {
     "bootstrap": "^5.3.2",
@@ -15,6 +16,7 @@
     "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.19.0",
+    "reactstrap": "^9.2.1",
     "sass": "^1.69.5",
     "styled-components": "^6.1.1"
   },
