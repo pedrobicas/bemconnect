@@ -19,7 +19,7 @@ Certifique-se de ter o Node.js instalado em sua máquina.
 ### 1. Clone o Repositório
 
 ```bash
-git clone https://github.com/seu-usuario/bemconnect.git
+git clone https://github.com/pedrobicas/bemconnect.git
 cd bemconnect
 ```
 
