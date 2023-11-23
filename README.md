@@ -8,7 +8,6 @@ BemConnect é um aplicativo que visa facilitar o acompanhamento de familiares pr
 - JSON Server (simulação de backend)
 - React Router (navegação entre páginas)
 - Sass (pré-processador CSS)
-- Concurrently (execução simultânea de scripts)
 
 ## Passo a Passo para Rodar a Aplicação
 
@@ -40,7 +39,7 @@ npm run backend
 ```bash
 npm run dev
 ```
-O aplicativo Vite + React será iniciado na porta 5173 (Verificar ao rodar o comando no terminal).
+O aplicativo Vite + React será iniciado na porta 5173 (Verificar a porta ao rodar o comando no terminal).
 
 ### 5. Acesse o Aplicativo no Navegador
 
