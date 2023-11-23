@@ -8,7 +8,7 @@ import "../Buttons/sass.scss"
 import "./nav.css";
 
 function BasicExample() {
-	const loggedUser = JSON.parse(localStorage.getItem("loggedUser"));
+	const loggedUser = JSON.parse(sessionStorage.getItem("loggedUser"));
 	return (
 		<Navbar expand="lg" className="bg-body">
 			<Container>
@@ -26,7 +26,7 @@ function BasicExample() {
 						{/* // Se não tiver um usuario logado, deve apresentar um botão para logar
 							// Se ja estiver logado, deve aparece o botao de perfil */}
 						{loggedUser ? (
-							<Link to="/profile" className="nav-link">
+							<Link to="/perfil" className="nav-link">
 								{/* // Quero que seja um botao */}
 								<button className="button-login">Perfil</button>
 							</Link>

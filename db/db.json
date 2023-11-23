@@ -1,14 +1,7 @@
-[
-    {
-        "id": 1,
-        "name": "Fulano",
-        "email": "fulano@example.com",
-        "password": "123456"
-    },
-    {
-        "id": 2,
-        "name": "Beltrano",
-        "email": "beltrano@example.com",
-        "password": "654321"
-    }
-]
+{
+  "testimonials": [
+    { "id": 1, "text": "O BemConnect transformou minha experiência no hospital. É incrível poder me sentir mais perto da minha família.", "author": "Ana" },
+    { "id": 2, "text": "Agradeço ao BemConnect por proporcionar essa conexão vital em tempos difíceis. Um aplicativo verdadeiramente útil.", "author": "Pedro" },
+    { "id": 3, "text": "Essa ferramenta faz toda a diferença. Estou mais tranquilo sabendo que posso acompanhar o progresso do meu ente querido.", "author": "Carla" }
+  ]
+}

@@ -1,8 +1,23 @@
 // src/components/HomeSection.jsx
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './sass.scss';
 
+const Testimonial = ({ text, author }) => (
+  <div className='testimonial'>
+    <p>"{text}"</p>
+    <p className='testimonialAuthor'>- {author}</p>
+  </div>
+);
+
 const HomeSection = () => {
+  const [testimonials, setTestimonials] = useState([]);
+
+  useEffect(() => {
+    // Buscar depoimentos do servidor JSON
+    fetch('http://localhost:3000/testimonials')
+      .then(response => response.json())
+      .then(data => setTestimonials(data));
+  }, []);
     return (
       <section className="home">
         <div className="container">
@@ -46,20 +61,13 @@ const HomeSection = () => {
             <li>Explore os recursos e mantenha-se conectado.</li>
           </ol>
         </div>
-
+        
         <div className="testimonials">
           <h2>Depoimentos</h2>
-          <div className='testimonial'>
-            <p>
-              "O BemConnect tornou o tempo no hospital muito mais suportável. Poder ver minha família quando eu quisesse fez toda a diferença."
-            </p>
-            <p className='testimonialAuthor'>- Maria, Cuidadora</p>
-          </div>
-          <div className='testimonial'>
-            <p>
-              "Agradeço profundamente por esta ferramenta. Me senti mais próximo da minha família, mesmo a quilômetros de distância."
-            </p>
-            <p className='testimonialAuthor'>- João, Paciente</p>
+          <div>
+            {testimonials.map(testimonial => (
+              <Testimonial key={testimonial.id} {...testimonial} />
+            ))}
           </div>
         </div>
         </div>

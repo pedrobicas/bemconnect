@@ -4,10 +4,14 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr; /* Default single column layout */
+    grid-gap: 20px;
   
     header {
       text-align: center;
       margin-bottom: 30px;
+      grid-column: 1 / -1; /* Full-width header */
   
       h1 {
         font-size: 4em;
@@ -27,6 +31,7 @@
       text-align: center;
       padding: 100px 20px;
       margin-bottom: 30px;
+      grid-column: 1 / -1;
   
       .conteudo {
         max-width: 800px;

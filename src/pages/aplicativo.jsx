@@ -71,11 +71,6 @@ export function Aplicativo() {
                         <a href="" className="cta-button">Baixar no Google Play</a>
                     </div>
                 </section>
-
-                <footer>
-                    <p>Obrigado por escolher o BemConnect para o cuidado de seus entes queridos.</p>
-                    <p>Equipe BemConnect</p>
-                </footer>
             </div>
             <Footer />
         </>
