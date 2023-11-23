@@ -32,7 +32,7 @@ npm install
 ### 3.  Inicie o JSON Server (Simulação de Backend)
 
 ```bash
-npm run json-server
+npm run backend
 ```
 
 ### 4. Em Outro Terminal, Inicie o Aplicativo Vite + React
