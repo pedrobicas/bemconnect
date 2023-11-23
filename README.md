@@ -21,22 +21,25 @@ Certifique-se de ter o Node.js instalado em sua máquina.
 ```bash
 git clone https://github.com/seu-usuario/bemconnect.git
 cd bemconnect
+```
 
 ### 2.  Instale as Dependências
 
 ```bash
 npm install
+```
 
 ### 3.  Inicie o JSON Server (Simulação de Backend)
 
 ```bash
 npm run json-server
+```
 
 ### 4. Em Outro Terminal, Inicie o Aplicativo Vite + React
 
 ```bash
 npm run dev
-
+```
 O aplicativo Vite + React será iniciado na porta 5173 (Verificar ao rodar o comando no terminal).
 
 ### 5. Acesse o Aplicativo no Navegador
