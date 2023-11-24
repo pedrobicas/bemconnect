@@ -1,6 +1,7 @@
 # BemConnect - Portal de Acompanhamento Hospitalar
 
 BemConnect é um aplicativo que visa facilitar o acompanhamento de familiares próximos a pessoas que estão em estado de internação nos hospitais. Ele proporciona uma conexão segura entre pacientes e familiares, permitindo o acesso a recursos específicos mediante permissão do paciente.
+
 ## Integrantes
 - Luigi Ferrara Sinno RM98047
 - Pedro Henrique Bicas Couto RM99534
@@ -11,6 +12,10 @@ BemConnect é um aplicativo que visa facilitar o acompanhamento de familiares pr
 - JSON Server (simulação de backend)
 - React Router (navegação entre páginas)
 - Sass (pré-processador CSS)
+
+### Link do deploy
+
+[BemConnect](https://pedrobicas.github.io/bemconnect)
 
 ## Passo a Passo para Rodar a Aplicação
 

@@ -4,6 +4,7 @@ import NavBar from "../componentes/NavBar";
 import Footer from '../componentes/Footer';
 import MainMenu from "../componentes/MainMenu";
 import App from "../imgs/app.png"
+import { Link } from "react-router-dom";
 
 export function Aplicativo() {
     return (
@@ -15,7 +16,7 @@ export function Aplicativo() {
                     <div className="conteudo">
                         <h2>Descubra uma Nova Forma de Cuidar</h2>
                         <p>Conecte-se com seus entes queridos e acompanhe sua jornada de recuperação.</p>
-                        <a href="" className="cta-button">Baixar Agora</a>
+                        <Link to="/bemconnect/aplicativo" className="cta-button"> Baixar Agora </Link>
                     </div>
                 </section>
 
@@ -67,8 +68,8 @@ export function Aplicativo() {
                         e eficiente. Nosso aplicativo está disponível para dispositivos iOS e Android.
                     </p>
                     <div className="store-links">
-                        <a href="" className="cta-button">Baixar na App Store</a>
-                        <a href="" className="cta-button">Baixar no Google Play</a>
+                    <Link to="/bemconnect/aplicativo" className="cta-button"> Baixar na App Store </Link>
+                    <Link to="/bemconnect/aplicativo" className="cta-button"> Baixar no Google Play </Link>
                     </div>
                 </section>
             </div>
