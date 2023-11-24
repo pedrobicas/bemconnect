@@ -3,10 +3,13 @@ import NavBar from "../componentes/NavBar";
 import Title from "../componentes/Title";
 import CustomerForm from "../componentes/CustomerForm";
 import { Container } from "../componentes/Forms/Container";
+import { Link, useNavigate } from "react-router-dom";
 
 import "../componentes/Buttons/sass.scss"
 
 export const Profile = () => {
+	const navigate = useNavigate()
+
 	const loggedUser = JSON.parse(sessionStorage.getItem("loggedUser")) || {};
 	const userData = loggedUser["data"];
 
@@ -20,12 +23,12 @@ export const Profile = () => {
 			data: customerObj,
 		};
 		sessionStorage.setItem("loggedUser", JSON.stringify(user));
-		window.location.href = "/perfil";
+		navigate('/bemconnect/perfil')
 	}
 
 	function logOut() {
 		sessionStorage.removeItem("loggedUser");
-		window.location.href = "/";
+		navigate('/bemconnect')
 	}
 
 	return (

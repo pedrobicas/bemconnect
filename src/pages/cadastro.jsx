@@ -1,14 +1,16 @@
 import { useState } from "react";
 import CustomerForm from "../componentes/CustomerForm";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Container } from "../componentes/Forms/Container";
 
 export function Register() {
+	const navigate = useNavigate()
+	
 	function registerCustomer(customerObj) {
 		const customers = JSON.parse(sessionStorage.getItem("Customers")) || [];
 		customers.push(customerObj);
 		sessionStorage.setItem("customers", JSON.stringify(customers));
-		window.location.href = "/login";
+		navigate('/bemconnect/login')
 	}
 	return (
 		<>

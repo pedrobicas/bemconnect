@@ -4,12 +4,14 @@ import { Form } from "react-bootstrap";
 import styled from "styled-components";
 import "../componentes/Buttons/sass.scss"
 import Logo from "../imgs/logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
 
 export function Login() {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 	const [errors, setErrors] = useState({});
+	const navigate = useNavigate()
 
 	function setErrorToEntity(entityName, errorMessage) {
 		setErrors((prevValue) => {
@@ -70,7 +72,7 @@ export function Login() {
 			return;
 		}
 		sessionStorage.setItem("loggedUser", JSON.stringify(user));
-		window.location.href = "/";
+		navigate('/bemconnect')
 	};
 
 	return (
