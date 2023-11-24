@@ -12,7 +12,7 @@ function BasicExample() {
 	return (
 		<Navbar expand="lg" className="bg-body">
 			<Container>
-				<Link to="/" className="logo">
+				<Link to="/bemconnect" className="logo">
 					<img src={Logo} alt="Logo do Site" />
 				</Link>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
