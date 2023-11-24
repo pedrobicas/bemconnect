@@ -12,7 +12,7 @@ export default function Footer() {
           <h3 className="text">Navegação</h3>
           <ul className="ul">
             <li className="li">
-              <a href="/">Home</a>
+              <a href="/bemconnect">Home</a>
             </li>
             <li className="li">
               <a href="/bemconnect/sobre"> Sobre </a>

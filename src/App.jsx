@@ -14,11 +14,11 @@ function App() {
 				{/* Rota para as páginas */}
 				<Routes>
 					<Route exact path="/bemconnect" element={<Home />} />
-					<Route exact path="/bemconnect/sobre" element={<Sobre />} />
-					<Route exact path="/bemconnect/aplicativo" element={<Aplicativo />} />
-					<Route exact path="/bemconnect/cadastro" element={<Register />} />
-					<Route exact path="/bemconnect/login" element={<Login />} />
-					<Route exact path="/bemconnect/perfil" element={<Profile />} />
+					<Route exact path="/sobre" element={<Sobre />} />
+					<Route exact path="/aplicativo" element={<Aplicativo />} />
+					<Route exact path="/cadastro" element={<Register />} />
+					<Route exact path="/login" element={<Login />} />
+					<Route exact path="/perfil" element={<Profile />} />
 				</Routes>
 			</Router>
 		</div>
