@@ -18,8 +18,8 @@ export function Register() {
 						registerCustomer(data);
 					}}
 				/>
-			<Link to="/login">Já possui um cadastro?</Link> <br />
-			<Link to="/">Ir para Home</Link>
+			<Link to="/bemconnect/login">Já possui um cadastro?</Link> <br />
+			<Link to="/bemconnect">Ir para Home</Link>
 			</Container>
 		</>
 	);

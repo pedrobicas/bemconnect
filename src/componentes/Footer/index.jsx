@@ -15,10 +15,10 @@ export default function Footer() {
               <a href="/">Home</a>
             </li>
             <li className="li">
-              <a href="/sobre"> Sobre </a>
+              <a href="/bemconnect/sobre"> Sobre </a>
             </li>
             <li className="li">
-              <a href="/aplicativo"> Aplicativo </a>
+              <a href="/bemconnect/aplicativo"> Aplicativo </a>
             </li>
           </ul>
         </div>
