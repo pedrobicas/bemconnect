@@ -1,6 +1,8 @@
 // src/components/HomeSection.jsx
 import React, { useState, useEffect } from 'react';
 import './sass.scss';
+import { addTestimonial } from '../../services/testimonialService';
+import "../Buttons/sass.scss"
 
 const Testimonial = ({ text, author }) => (
   <div className='testimonial'>
@@ -11,6 +13,8 @@ const Testimonial = ({ text, author }) => (
 
 const HomeSection = () => {
   const [testimonials, setTestimonials] = useState([]);
+  const [newTestimonialText, setNewTestimonialText] = useState('');
+  const [newTestimonialAuthor, setNewTestimonialAuthor] = useState('');
 
   useEffect(() => {
     // Buscar depoimentos do servidor JSON
@@ -18,6 +22,20 @@ const HomeSection = () => {
       .then(response => response.json())
       .then(data => setTestimonials(data));
   }, []);
+  const handleAddTestimonial = async () => {
+    if (!newTestimonialText.trim() || !newTestimonialAuthor.trim()) {
+      alert('Por favor, preencha todos os campos do depoimento.');
+      return;
+    }
+    try {
+      const newTestimonial = await addTestimonial(newTestimonialText, newTestimonialAuthor);
+      setTestimonials([...testimonials, newTestimonial]);
+      setNewTestimonialText('');
+      setNewTestimonialAuthor('');
+    } catch (error) {
+      console.error('Erro ao adicionar depoimento:', error.message);
+    }
+  };
     return (
       <section className="home">
         <div className="container">
@@ -68,6 +86,21 @@ const HomeSection = () => {
             {testimonials.map(testimonial => (
               <Testimonial key={testimonial.id} {...testimonial} />
             ))}
+          </div>
+          <div className='addTestimonialForm'>
+            <h3>Adicionar Novo Depoimento</h3>
+            <textarea
+              value={newTestimonialText}
+              onChange={e => setNewTestimonialText(e.target.value)}
+              placeholder="Digite seu depoimento..."
+            />
+            <input
+              type="text"
+              value={newTestimonialAuthor}
+              onChange={e => setNewTestimonialAuthor(e.target.value)}
+              placeholder="Seu Nome"
+            />
+            <button className='button-login' onClick={handleAddTestimonial}>Adicionar Depoimento</button>
           </div>
         </div>
         </div>

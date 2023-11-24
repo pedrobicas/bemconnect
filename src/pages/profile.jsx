@@ -20,7 +20,7 @@ export const Profile = () => {
 			data: customerObj,
 		};
 		sessionStorage.setItem("loggedUser", JSON.stringify(user));
-		window.location.href = "/profile";
+		window.location.href = "/perfil";
 	}
 
 	function logOut() {

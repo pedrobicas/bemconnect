@@ -1,14 +1,16 @@
 # BemConnect - Portal de Acompanhamento Hospitalar
 
 BemConnect é um aplicativo que visa facilitar o acompanhamento de familiares próximos a pessoas que estão em estado de internação nos hospitais. Ele proporciona uma conexão segura entre pacientes e familiares, permitindo o acesso a recursos específicos mediante permissão do paciente.
-
+## Integrantes
+- Luigi Ferrara Sinno RM98047
+- Pedro Henrique Bicas Couto RM99534
+  
 ## Tecnologias Utilizadas
 
 - React (frontend)
 - JSON Server (simulação de backend)
 - React Router (navegação entre páginas)
 - Sass (pré-processador CSS)
-- Concurrently (execução simultânea de scripts)
 
 ## Passo a Passo para Rodar a Aplicação
 
@@ -19,25 +21,28 @@ Certifique-se de ter o Node.js instalado em sua máquina.
 ### 1. Clone o Repositório
 
 ```bash
-git clone https://github.com/seu-usuario/bemconnect.git
+git clone https://github.com/pedrobicas/bemconnect.git
 cd bemconnect
+```
 
 ### 2.  Instale as Dependências
 
 ```bash
 npm install
+```
 
 ### 3.  Inicie o JSON Server (Simulação de Backend)
 
 ```bash
-npm run json-server
+npm run backend
+```
 
 ### 4. Em Outro Terminal, Inicie o Aplicativo Vite + React
 
 ```bash
 npm run dev
-
-O aplicativo Vite + React será iniciado na porta 5173 (Verificar ao rodar o comando no terminal).
+```
+O aplicativo Vite + React será iniciado na porta 5173 (Verificar a porta ao rodar o comando no terminal).
 
 ### 5. Acesse o Aplicativo no Navegador
 
