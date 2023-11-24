@@ -1,5 +1,6 @@
 import Logo from "../../imgs/logo.png";
 import "./sass.scss"
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -12,13 +13,13 @@ export default function Footer() {
           <h3 className="text">Navegação</h3>
           <ul className="ul">
             <li className="li">
-              <a href="/">Home</a>
+              <Link to="/bemconnect">Home</Link>
             </li>
             <li className="li">
-              <a href="/sobre"> Sobre </a>
+              <Link to="/bemconnect/sobre"> Sobre </Link>
             </li>
             <li className="li">
-              <a href="/aplicativo"> Aplicativo </a>
+              <Link to="/bemconnect/aplicativo"> Aplicativo </Link>
             </li>
           </ul>
         </div>

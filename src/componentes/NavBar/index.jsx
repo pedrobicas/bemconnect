@@ -18,20 +18,21 @@ function BasicExample() {
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="me-auto">
-						<Nav.Link href="/">Inicio</Nav.Link>
-						<Nav.Link href="/sobre">Sobre</Nav.Link>
-						<Nav.Link href="/aplicativo">Aplicativo</Nav.Link>
+						<Nav.Link><Link to="/bemconnect/">Inicio</Link></Nav.Link>
+						<Nav.Link><Link to="/bemconnect/sobre">Sobre</Link></Nav.Link>
+						<Nav.Link><Link to="/bemconnect/aplicativo">Aplicativo</Link></Nav.Link>
+						
 					</Nav>
 					<Nav>
 						{/* // Se não tiver um usuario logado, deve apresentar um botão para logar
 							// Se ja estiver logado, deve aparece o botao de perfil */}
 						{loggedUser ? (
-							<Link to="/perfil" className="nav-link">
+							<Link to="/bemconnect/perfil" className="nav-link">
 								{/* // Quero que seja um botao */}
 								<button className="button-login">Perfil</button>
 							</Link>
 						) : (
-							<Link to="/login" className="nav-link">
+							<Link to="/bemconnect/login" className="nav-link">
 								<button className="button-login">Entrar</button>
 							</Link>
 						)}

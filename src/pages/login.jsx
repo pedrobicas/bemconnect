@@ -111,8 +111,8 @@ export function Login() {
 							</FormContainer>
 
 						</Form>
-						<Link to="/cadastro">Não tem um registro? &gt; </Link>
-						<Link to="/">Ir para Home</Link>
+						<Link to="/bemconnect/cadastro">Não tem um registro? &gt; </Link>
+						<Link to="/bemconnect">Ir para Home</Link>
 					</ContainerRigth>
 				</LoginContainer>
 		</>
