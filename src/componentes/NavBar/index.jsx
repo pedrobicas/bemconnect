@@ -12,7 +12,7 @@ function BasicExample() {
 	return (
 		<Navbar expand="lg" className="bg-body">
 			<Container>
-				<Link to="/" className="logo">
+				<Link to="/bemconnect" className="logo">
 					<img src={Logo} alt="Logo do Site" />
 				</Link>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -21,7 +21,6 @@ function BasicExample() {
 						<Nav.Link><Link to="/bemconnect/">Inicio</Link></Nav.Link>
 						<Nav.Link><Link to="/bemconnect/sobre">Sobre</Link></Nav.Link>
 						<Nav.Link><Link to="/bemconnect/aplicativo">Aplicativo</Link></Nav.Link>
-						
 					</Nav>
 					<Nav>
 						{/* // Se não tiver um usuario logado, deve apresentar um botão para logar
