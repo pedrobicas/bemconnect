@@ -12,6 +12,10 @@ BemConnect é um aplicativo que visa facilitar o acompanhamento de familiares pr
 - React Router (navegação entre páginas)
 - Sass (pré-processador CSS)
 
+### Link do deploy
+
+[BemConnect](https://pedrobicas.github.io/bemconnect)
+
 ## Passo a Passo para Rodar a Aplicação
 
 ### Pré-requisitos
