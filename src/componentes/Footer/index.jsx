@@ -12,13 +12,13 @@ export default function Footer() {
           <h3 className="text">Navegação</h3>
           <ul className="ul">
             <li className="li">
-              <a href="/bemconnect">Home</a>
+              <a href="/">Home</a>
             </li>
             <li className="li">
-              <a href="/bemconnect/sobre"> Sobre </a>
+              <a href="/sobre"> Sobre </a>
             </li>
             <li className="li">
-              <a href="/bemconnect/aplicativo"> Aplicativo </a>
+              <a href="/aplicativo"> Aplicativo </a>
             </li>
           </ul>
         </div>
